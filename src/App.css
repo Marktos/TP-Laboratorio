@@ -1,0 +1,32 @@
+@import url('./components/Navbar-component/Navbar.css');
+@import url('./components/Aside-component/Aside.css');
+@import url('./components/Principal-component/Principal.css');
+@import url('./components/Footer-component/Footer.css');
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.aside {
+    background-color: #4CAF50; /* Color de fondo del Aside */
+    color: #fff;
+    width: 200px;
+}
+
+.principal {
+    background-color: #FFC107; /* Color de fondo del Principal */
+    color: #000;
+    flex: 1;
+}
+
+.footer {
+    background-color: #2196F3; /* Color de fondo del Footer */
+    color: #fff;
+}
