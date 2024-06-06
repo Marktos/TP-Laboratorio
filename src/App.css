@@ -1,32 +1,67 @@
-@import url('./components/Navbar-component/Navbar.css');
-@import url('./components/Aside-component/Aside.css');
-@import url('./components/Principal-component/Principal.css');
-@import url('./components/Footer-component/Footer.css');
-
-.app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+/* Reseteo de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-    display: flex;
-    flex: 1;
+/* Fondo negro para toda la aplicación */
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
 
-.aside {
-    background-color: #4CAF50; /* Color de fondo del Aside */
-    color: #fff;
-    width: 200px;
+/* Estilos para el AppBar */
+.MuiAppBar-root {
+  background-color: #1a1a1a; /* Gris oscuro para el AppBar */
 }
 
-.principal {
-    background-color: #FFC107; /* Color de fondo del Principal */
-    color: #000;
-    flex: 1;
+/* Estilos para el Toolbar */
+.MuiToolbar-root {
+  display: flex;
+  justify-content: center;
 }
 
-.footer {
-    background-color: #2196F3; /* Color de fondo del Footer */
-    color: #fff;
+/* Estilos para el Typography en el Header */
+.MuiTypography-h6 {
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para las Card */
+.MuiCard-root {
+  background-color: #1a1a1a; /* Fondo negro para las tarjetas */
+  color: #ffffff; /* Texto blanco */
+  border: 1px solid #333333; /* Borde gris oscuro */
+}
+
+/* Estilos para las imágenes dentro de las Card */
+.MuiCardMedia-root {
+  border-bottom: 1px solid #333333; /* Línea de separación */
+}
+
+/* Estilos para los títulos en las Card */
+.MuiTypography-h5 {
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para el contenido de las Card */
+.MuiTypography-body2 {
+  color: #b0b0b0; /* Texto gris claro */
+}
+
+/* Estilos para los botones en las Card */
+.MuiButton-root {
+  color: #ffffff; /* Texto blanco */
+  border: 1px solid #ffffff; /* Borde blanco */
+  margin: 8px;
+}
+
+.MuiButton-root:hover {
+  background-color: #333333; /* Fondo gris oscuro al pasar el ratón */
+}
+
+/* Espaciado en el contenedor principal */
+.MuiContainer-root {
+  padding: 16px;
 }

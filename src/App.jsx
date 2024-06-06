@@ -1,23 +1,22 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar-component/Navbar'
-import Footer from './components/Footer-component/Footer'
-import Principal from './components/Principal-component/Principal'
-import Aside from './components/Aside-component/Aside'
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/Header/header";
+import Portfolio from "./components/Portfolio/portfolio";
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="app">
-        <Navbar />
-        <div className="container">
-            <Aside />
-            <Principal />
-        </div>
-        <Footer />
+      <CssBaseline />
+      <Header />
+      <Container>
+        <Portfolio />
+      </Container>
     </div>
   );
 }
 
-export default App
+export default App;
